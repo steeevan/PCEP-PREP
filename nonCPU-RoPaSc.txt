@@ -1,0 +1,27 @@
+game=["Rock","Paper","Scissors"]
+choice=input("Player1?   ")
+print("Player1 choice:  "+choice)
+choice2=input("Player2?   ")
+print("Player2 choice:  "+choice2)
+if(choice2=="Paper"):
+    if(choice=="Scissors"):
+        print("p1 WINS!     +5 PTS")
+    elif(choice=="Rock"):
+        print("p2 WINS!     +5 PTS")
+    elif(choice=="Paper"):
+        print("Dr@w     +0 PTS")
+if(choice2=="Rock"):
+    if(choice=="Paper"):
+        print("p1 WINS!     +5 PTS")
+    elif(choice=="Scissors"):
+        print("p2 WINS!     -5 PTS")
+    elif(choice=="Rock"):
+        print("Dr@w_    +0 PTS")
+if(choice2=="Scissors"):
+    if(choice=="Rock"):
+        print("p1 WINS!     +5 PTS")
+    elif(choice=="Paper"):
+        print("p2 WINS!     +5 PTS")
+    elif(choice=="Scissors"):
+        print("Dr@w_    +0 PTS")
+        #Derrick
