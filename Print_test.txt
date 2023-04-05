@@ -1,0 +1,8 @@
+a="  ||"
+b="______"
+print(a)
+print(b)
+print(a)
+print(b)
+print(a)
+#Derrick  :D
