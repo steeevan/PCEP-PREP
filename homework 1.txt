@@ -2,4 +2,5 @@ fn=input("Enter your first name:   ")
 ln=input("Enter your last name:   ")
 mo=input("Emter your date of birth:   ")
 print(fn,ln,mo)
+
 #Derrick   :D
