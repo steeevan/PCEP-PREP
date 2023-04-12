@@ -6,7 +6,7 @@
 #current_time = datetime.datetime.now()
 #print current_time
 #3
-#import math
+import math
 #radius = float(input('What is the radius of the circle?'))
 #area = math.pi*radius**2
 #print ("Area =" + str(area))
@@ -14,10 +14,20 @@
 #fname = input("What is your first name?")
 #lname = input("What is your last name?")
 #print (lname + " " + fname)
+#5
+values = input("Input some comma separated numbers: ")
+v_list = values.split(',')
+v_tuple = tuple(v_list)
+print ('List: ', v_list)
+print ('Tuple: ', v_tuple)
 #6
 #color_list = ["Red","Green","White","Black"]
 #print (color_list [0], color_list [3])
-
+a = int(input('Input an integer:'))
+n1 = int('%s' % a)
+n2 = int('%s%s' % (a,a))
+n3 = int('%s%s%s' % (a,a,a))
+print(n1+n2+n3)
 #8
 #radius = float(input('What is the radius of the sphere?'))
 #volume = math.pi*4/3*radius**2
@@ -74,13 +84,17 @@
 #height = int(input('What is the height of your triangle'))
 #area = base*height*0.5
 #print area
-#19
+#17
 
+#18
+
+#19
+#i know how to do this problem, i just didnt have enough time to do it
 #20
 num1 = int(input('What is the first number of the equation?'))
 num2 = int(input('What is the second number of the equation?'))
-list(15.20) = ['15','16','17','18','19','20']
-if num1+num2 in 15.20:
-    print 20
+summ = num1+num2
+if num1+num2 in range(15,20):
+    return 20
 else:
-    print num1+num2
+    return summ
