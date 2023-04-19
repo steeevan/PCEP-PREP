@@ -1,3 +1,4 @@
+from copy import  deepcopy
 #1
 #string = input("Give me a verb, i'll add ing or ly accordingly: ")
 #if len(string)>=3:
@@ -41,14 +42,11 @@ print ('Length of longest word: ' + max_value1)
 #d = {1:'a',2:'b',3:'c'}
 #del(d[1])
 #print (d)
-#9
-list1 = list(input('Give me comma separated words: '))
-list2 = list(input('Give me more comma separated words: '))
-d = {x:'y',x:'y',x:'y'}
-for x in d:
-    x+=1
-    if x<=3:
-        
+#9, I copied this from class
+names = ['Max','Matt','Sylas','Derrick']
+ages = [11,11,13,10]
+class_dictionary = dict(zip(names,ages))
+print (class_dictionary)
 #10
 
 #11
@@ -64,7 +62,11 @@ for x in d:
 #13
 #atuple = tuple(input('Give me letters:'))
 #print atuple[-5]
-#14
-atuple = ('1','2','3','4)
-
-while 
+#14, I copied this from class
+tuplex = ('Hello',5,[],True)
+print tuplex
+tuplecopy = deepcopy(tuplex)
+print tuplecopy
+tuplecopy[2].append(50)
+print(tuplex)
+print(tuplecopy)
