@@ -25,6 +25,11 @@ for char in range(0,len(stri)):
         modded_str+=stri[char]
 print(modded_str)
 ##############
+names=["Max","Matt","Sylas","Derrick"]
+ages=[11,11,13,10]
+class_dictionary=dict(zip(names,ages))
+print(class_dictionary)
+##############
 def removeOddIndexCharacters(s):
     new_s=""
     i=0
