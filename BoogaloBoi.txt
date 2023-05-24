@@ -1,0 +1,26 @@
+def class_summary(class_grades):
+       dictionary_grades={}
+       for letter_grade in class_grades:
+           keys=dictionary_grades.keys()
+           if letter_grade in keys:
+               dictionary_grades[letter_grade]+=1
+           else:
+               dictionary_grades[letter_grade]=1
+       return dictionary_grades
+def get_class_grades():
+   class_grades=input("Input a sentence:  ")
+   return class_grades
+my_class=get_class_grades()
+print(my_class)
+my_class=get_class_grades()
+summary=class_summary(my_class)
+print(summary)
+######################
+money_man=int(input("Amount of $:  "))
+print(money_man*5)
+######################
+boolean_man=int(input("Give me a number less than one:  "))
+if boolean_man<1:
+    print("ERROR")
+else:
+    print("True,",boolean_man,".")

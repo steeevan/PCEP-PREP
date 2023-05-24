@@ -1,0 +1,29 @@
+import random
+def generate_number():
+    min=int(input("Please input a minimum number:  "))
+    max=int(input("Please input a maximum number:  "))
+    print(random.randint(min,max))
+generate_number()
+def lit():
+    min=int(input("Please input a minimum number:  "))
+    max=int(input("Please input a maximum number:  "))
+    print(random.randint(min,max))
+    if min or max==0:
+        print("Exiting...")
+    else:
+        min=int(input("Please input a minimum number:  "))
+        max=int(input("Please input a maximum number:  "))
+        print(random.randint(min,max))
+a=[7,9,4,66,23,3,1,2,55,2342342,32,5]
+new_list=[]
+for item in a:
+    if item<5:
+        new_list.append(item)
+        print(new_list)
+def rock():
+    boogerboi=int(input("Input a number:  "))
+    if boogerboi%2==0:
+        print("Even")
+    else:
+        print("Odd")
+rock()
