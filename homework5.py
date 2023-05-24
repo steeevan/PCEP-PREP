@@ -18,13 +18,27 @@ print (max(list1.keys()))
 print (max(list1.values()))
 '''
 #2
-'''
-import sympy
-op=input("Give me a mathematical operation sign: ")
-num1=input("What is the first number that will be used in the equation?")
-num2=input("What is the second number that will be used in the equation?")
-equation=(num1,op,num2)
-'''
+def select_operator():
+    useroperator=input("Enter the mathematical operator that will be used: ")
+    return useroperator
+def get_two_numbers():
+    num1=int(input("Enter the first number: "))
+    num2=int(input("Enter the second number: "))
+    return num1, num2
+def calculate(number1,number2,operator):
+    if operator=='*':
+        return number1*number2
+    elif operator=='/':
+        return number1/number2
+    elif operator=='+':
+        return number1+number2
+    elif operator=='-':
+        return number1-number2
+    else:
+        print("Select correct operator")
+0=selectoperator()
+n1,n2=get_two_numbers()
+print(calculate(n1,n2,0)
 #3
 '''
 money=str(input("How much money did you earn today, numerical value please: "))
@@ -34,5 +48,3 @@ while x>0:
     x-=1
 '''
 #4
-1=int(input("Give me a number: "))
-if 
