@@ -1,0 +1,94 @@
+import sys
+
+
+def main():
+    print("Welcome to the Westside College Student Database.")
+    print("\nThe WCSD is a site for teachers to view grades and addresses, add new students, delete students,"
+          "\n and input grades and addresses.")
+    sa = {"Alex Sanchez": "3442 South Gate",
+          "Charles Fortinbras": "1235 Fossil Ranch Rd.",
+          "Hayley Linus": "4542 Dandelion Ave."
+          }
+    sg = {"Alex Sanchez": "A:Chemistry,C-:P.E.,A+:Math,B:ELA",
+          "Charles Fortinbras": "A+:Human Rights,A+:Programming,A+:Electrical Engineering,A+:P.E.",
+          "Hayley Linus": "A-:Archeology,B:Geography,C+:Biology,A+:French"
+          }
+
+    def get_grades(sn):
+        if sn in sg:
+            return sg[sn]
+        else:
+            return "Student not found."
+
+    def view_address(sn):
+        if sn in sa:
+            return sa[sn]
+        else:
+            return "Student not found."
+
+    def change_address(sn, nsa):
+        nsa[sn] = nsa
+
+    def add_student(nsn, nsa, nsg):
+        nsa[nsn] = nsa
+        nsg[nsn] = nsg
+
+    def delete_student(sn):
+        if sn in sa:
+            del sa[sn]
+            del sg[sn]
+
+    def find_student():
+        while True:
+            response = input("Enter desired student:  ").title()
+            listofthings = input("Select a number:  "
+                                 "\n1. View Report Card"
+                                 "\n2. View Current Address"
+                                 "\n3. Change Address"
+                                 "\n4. Delete Student"
+                                 "\n   ")
+            if listofthings == '1':
+                print(get_grades(response))
+            elif listofthings == '2':
+                print(view_address(response))
+            elif listofthings == '3':
+                nsa = input("Enter a new address for this student:   ")
+                change_address(response, nsa)
+            elif response == "Add student":
+                New_name = input("Enter the name of the new student:   ")
+                New_address = input("Enter the address of the new student:   ")
+                New_grades = input("Enter the student's grades:   ")
+                add_student(New_name, New_address, New_grades)
+                print(f"Confirmation process complete.")
+            elif listofthings == '4':
+                delete_student(response)
+                print(f"Confirmation process complete.")
+            elif listofthings or response == '0':
+                sys.exit()
+            else:
+                print("Invalid option.")
+
+    find_student()
+
+
+main()
+'''
+Function Name: main
+Desc.: This function is the backbone of the project, holding important code and data.
+Input:
+...
+Output:
+...
+Local Variables:
+N/A
+'''
+'''
+Function Name: get_grades
+Desc.: This function shows the user the students grades.
+Input:
+...
+Output:
+...
+Local Variables:
+sn
+'''
