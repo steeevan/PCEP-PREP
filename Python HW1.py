@@ -37,6 +37,9 @@ def student_list():
     Local Variables: This function makes a variable called num to provide the numbers for the formatting of the list.
     --------------------------------------------------------------------------------------------------
     '''
+    ##############
+    # It looks like this prints each time when you are back at main menu. It should only print once in the beginnging of the project
+    ##############
     print("Academic Link Student Information System")
     print("This is Project 1")
     print("This system interacts with student grades in which are able to be modified.")
