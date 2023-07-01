@@ -785,7 +785,7 @@ def recp2():
     --------------------------------------------------------------------------------------------------
     '''
     global numRec
-    num = input("Please enter a number")
+    num = input("Please enter a side")
     try:
         numRec = int(num)
     except ValueError:
@@ -803,7 +803,7 @@ def recp3():
     --------------------------------------------------------------------------------------------------
     '''
     global num2Rec
-    num2 = input("Please enter a number")
+    num2 = input("Please enter a side")
     try:
         num2Rec = int(num2)
     except ValueError:
@@ -836,7 +836,7 @@ def sqrp2():
     --------------------------------------------------------------------------------------------------
     '''
     global numSqr
-    num = input("Please enter a number")
+    num = input("Please enter a side")
     try:
         numSqr = int(num)
     except ValueError:
@@ -868,7 +868,7 @@ def circp2():
     --------------------------------------------------------------------------------------------------
     '''
     global numCirc
-    num = input("Please enter a number")
+    num = input("Please enter a radius")
     try:
         numCirc = int(num)
     except ValueError:
@@ -901,7 +901,7 @@ def trip2():
     --------------------------------------------------------------------------------------------------
     '''
     global numTri
-    num = input("Please enter a number")
+    num = input("Please enter a side")
     try:
         numTri = int(num)
     except ValueError:
@@ -919,7 +919,7 @@ def trip3():
     --------------------------------------------------------------------------------------------------
     '''
     global num2Tri
-    num2 = input("Please enter a number")
+    num2 = input("Please enter a height")
     try:
         num2Tri = int(num2)
     except ValueError:
@@ -952,7 +952,7 @@ def recVp2():
     --------------------------------------------------------------------------------------------------
     '''
     global numrecV
-    num = input("Please enter a number")
+    num = input("Please enter a side")
     try:
         numrecV = int(num)
     except ValueError:
@@ -970,7 +970,7 @@ def recVp3():
     --------------------------------------------------------------------------------------------------
     '''
     global num2recV
-    num2 = input("Please enter a number")
+    num2 = input("Please enter a side")
     try:
         num2recV = int(num2)
     except ValueError:
@@ -988,7 +988,7 @@ def recVp4():
     --------------------------------------------------------------------------------------------------
     '''
     global num3recV
-    num3 = input("Please enter a number")
+    num3 = input("Please enter a side")
     try:
         num3recV = int(num3)
     except ValueError:
@@ -1020,7 +1020,7 @@ def cubeVp2():
     --------------------------------------------------------------------------------------------------
     '''
     global numcubeV
-    num = input("Please enter a number")
+    num = input("Please enter a side")
     try:
         numcubeV = int(num)
     except ValueError:
@@ -1052,7 +1052,7 @@ def cyliVp2():
     --------------------------------------------------------------------------------------------------
     '''
     global numcyliV
-    num = input("Please enter a number")
+    num = input("Please enter a radius")
     try:
         numcyliV = int(num)
     except ValueError:
@@ -1070,7 +1070,7 @@ def cyliVp3():
     --------------------------------------------------------------------------------------------------
     '''
     global num2cyliV
-    num2 = input("Please enter a number")
+    num2 = input("Please enter a height")
     try:
         num2cyliV = int(num2)
     except ValueError:
@@ -1102,7 +1102,7 @@ def spheVp2():
     --------------------------------------------------------------------------------------------------
     '''
     global numspheV
-    num = input("Please enter a number")
+    num = input("Please enter a radius")
     try:
         numspheV = int(num)
     except ValueError:
