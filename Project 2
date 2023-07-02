@@ -1,0 +1,377 @@
+# Super Advanced Calculator
+# Import is super important for pi!!!
+import math
+
+
+# The first function
+
+
+def introduction():
+    # This is the introduction to the MFC
+    print("Project 2: (Made by Team Spelled Wrong)")
+    print("\nThe Multi-Functional Calculator is a powerful tool designed to assist users"
+          "\nin performing arithmetic calculations and finding the areas of different"
+          "\ngeometric shapes. It combines the convenience of a conventional calculator"
+          "\nwith the added functionality of shape-specific area calculations.")
+
+
+# The second function
+
+
+def add(x, y):
+    return x + y
+
+
+# The third function
+
+
+def subtract(x, y):
+    return x - y
+
+
+# The fourth function
+
+
+def multiply(x, y):
+    return x * y
+
+
+# The fifth function(This is getting repetitive...)
+
+
+def divide(x, y):
+    return x / y
+
+
+# The sixth function
+
+
+def rectArea(base=1, height=1):
+    return base * height
+
+
+# The seventh function
+
+
+def sqrArea(base=1, base2=1):
+    return base * base2
+
+
+# The eighth function
+
+
+def circArea(radius=1):
+    return math.pi * radius ** 2
+
+
+# The ninth function
+
+
+def triArea(base=1, height=1):
+    return base * height / 2
+
+
+# The tenth function
+
+
+def cubeVol(side=1):
+    return side * side * side
+
+
+# The eleventh function
+
+
+def rectVol(length=1, width=1, height=1):
+    return length * width * height
+
+
+# The twelfth function
+
+
+def cyliVol(radius=1, height=1):
+    return math.pi * radius ** 2 * height
+
+
+# The thirteenth function
+
+
+def sphereVol(radius=1):
+    return 4 / 3 * math.pi * radius ** 3
+
+
+# The last function(!!!)
+# Initialization Stage
+
+
+def menu():
+    # The menu for the MFC
+    options = int(input("Please select a number:"
+                        "\n1. Addition"
+                        "\n2. Subtraction"
+                        "\n3. Multiplication"
+                        "\n4. Division"
+                        "\n5. Area of Shape"
+                        "\n6. Volume of Shape"
+                        "\n7. Exit\n"))
+    try:
+        options = int(input("Please select a number:"
+                            "\n1. Addition"
+                            "\n2. Subtraction"
+                            "\n3. Multiplication"
+                            "\n4. Division"
+                            "\n5. Area of Shape"
+                            "\n6. Volume of Shape"
+                            "\n7. Exit\n"))
+    # If the user inputs character that isn't an integer, here we fix the problem.
+    except ValueError:
+        print("Invalid input. Stop trying to break the code!")
+        print(options)
+    # Tedious if statements
+    if options in (1, 2, 3, 4, 5, 6, 7):
+        try:
+            if options == 1:
+                a = float(input("Enter a number:  "))
+                b = float(input("Enter another number:  "))
+                print(a, "+", b, "=", add(a, b))
+            elif options == 2:
+                c = float(input("Enter a number:  "))
+                d = float(input("Enter another number:  "))
+                print(c, "-", d, "=", subtract(c, d))
+            elif options == 3:
+                e = float(input("Enter a number:  "))
+                f = float(input("Enter another number:  "))
+                print(e, "*", f, "=", multiply(e, f))
+            elif options == 4:
+                g = float(input("Enter a number:  "))
+                h = float(input("Enter another number:  "))
+                print(g, "/", h, "=", divide(g, h))
+            elif options == 5:
+                aga = str(input("Please enter a shape: "))
+                if aga == "rectangle":
+                    qwerty = float(input("Enter a base:  "))
+                    qwerly = float(input("Enter a height:  "))
+                    print("Area of rectangle: ", rectArea(qwerly, qwerty))
+
+                elif aga == "square":
+                    wertle = float(input("Enter a base:  "))
+                    print("Area of square: ", sqrArea(wertle))
+
+                elif aga == "circle":
+                    dermax = float(input("Enter a radius:  "))
+                    print('Area of circle: ', circArea(dermax))
+
+                elif aga == "triangle":
+                    # One Piece reference: Germa66 and Katikuri
+                    germa66 = float(input("Enter a base:  "))
+                    katikuri = float(input("Enter a height:  "))
+                    print('Area of triangle: ', triArea(germa66, katikuri))
+                else:
+                    print('Shape not found')
+
+            elif options == 6:
+                ada = input("Please enter a 3D shape:  ")
+                if ada == "cube":
+                    insider = float(input("Enter the side length:  "))
+                    print('Vol of cube: ', cubeVol(insider))
+                elif ada == "cuboid":
+                    l = float(input("Enter a length:  "))
+                    w = float(input("Enter a width:  "))
+                    h = float(input("Enter a height:  "))
+                    print('Vol of cuboid: ', rectVol(l, w, h))
+                # Everyone forgets about this shape  '_'
+                elif ada == "cylinder":
+                    radica = float(input("Enter a radius:  "))
+                    hiddt = float(input(" Enter a height:  "))
+                    print('Vol of cylinder: ', cyliVol(radica, hiddt))
+                elif ada == "sphere":
+                    tagbacks = float(input("Enter a radius:  "))
+                    print('Vol of sphere: ', sphereVol(tagbacks))
+                else:
+                    print('3D shape not found')
+            elif options == "7":
+                return
+        # Except any errors here
+        except ZeroDivisionError or ValueError or NameError:
+            print("Please stop trying to break the code.")
+            print(menu())
+    else:
+        print('Invalid option')
+
+
+introduction()
+menu()
+
+
+# Function documentation time!
+# 1st documentation
+'''
+Name: introduction
+Desc.: This function prints out information about the MFC.
+Local Variables:
+...
+Input:
+...
+Output:
+Project 2: (Made by Team Spelled Wrong)")
+The Multi-Functional Calculator is a powerful tool designed to assist users
+in performing arithmetic calculations and finding the areas of different
+geometric shapes. It combines the convenience of a conventional calculator
+with the added functionality of shape-specific area calculations.
+'''
+# 2nd documentation
+'''
+Name: add
+Desc.: This function contains the adding option of the menu.
+Local Variables:
+...
+Input:
+...
+Output:
+...
+'''
+# 3nd documentation
+'''
+Name: subtract
+Desc.: This function contains the subtracting option of the menu.
+Local Variables:
+...
+Input:
+...
+Output:
+...
+'''
+# 4th documentation
+'''
+Name: multiply
+Desc.: This function contains the multiplying option of the menu.
+Local Variables:
+...
+Input:
+...
+Output:
+...
+'''
+# 5th documentation
+'''
+Name: divide
+Desc.: This function contains the dividing option of the menu.
+Local Variables:
+...
+Input:
+...
+Output:
+...
+'''
+# 6th documentation
+'''
+Name: rectArea
+Desc.: This function contains the rectangle's area.
+Local Variables:
+...
+Input:
+...
+Output:
+...
+'''
+# 7th documentation
+'''
+Name: sqrArea
+Desc.: This function contains the square's area.
+Local Variables:
+...
+Input:
+...
+Output:
+...
+'''
+# 8th documentation
+'''
+Name: circArea
+Desc.: This function contains the circle's area.
+Local Variables:
+...
+Input:
+...
+Output:
+...
+'''
+# 9th documentation
+'''
+Name: triArea
+Desc.: This function contains the triangle's area.
+Local Variables:
+...
+Input:
+...
+Output:
+...
+'''
+# 10th documentation
+'''
+Name: rectVol
+Desc.: This function contains the cuboid(rectangle)'s volume
+Local Variables:
+...
+Input:
+...
+Output:
+... 
+'''
+# 11th documentation
+'''
+Name: cubeVol
+Desc.: This function contains the cube's volume
+Local Variables:
+...
+Input:
+...
+Output:
+... 
+'''
+# 12th documentation
+'''
+Name: cyliVol
+Desc.: This function contains the cylinder's volume
+Local Variables:
+...
+Input:
+...
+Output:
+... 
+'''
+# 13th documentation
+'''
+Name: sphereVol
+Desc.: This function contains the sphere's volume
+Local Variables:
+...
+Input:
+...
+Output:
+... 
+'''
+# THE FINAL DOCUMENTATION(DOOM! sound effect)
+'''
+Name: menu
+Desc.: This function calculates numbers, area, and volume of shapes.
+Local Variables:
+a, b, c, d, e, f, g, h, qwerty, qwerly, wertle, dermax, germa66, katikuri, 
+insider, l, w, h, radica, hiddt, tagbacks
+Input:
+...
+Output:
+Please select a number:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Area of Shape
+6. Volume of Shape
+7. Exit
+(blank line for answer)
+'''
+# 'I hereby guide my document to end.'
+#       - Gol D. Roger
+# One Piece reference haha lol
+# End of project
+# - Team Spelled Wrong
